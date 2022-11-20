@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">   
+    <div id="header">
+        <img src="images/pizza_banner.jpg" alt="Bild Produkte" width="1200" height="300"/>
+    </div>
+    <div id="topmenue">
+        <ul id="menue">
+            <li><a href="index.html" target="_self" title="zur Startseite">Home</a></li>
+            <li><a class="active" href="speisen.html" target="_self" title="zu den Produkten">zu den Speisen</a></li>
+            <li><a href="kontakt.html" target="_self" title="zum Kontakt">Kontakt</a></li>
+            <li><a href="warenkorb.html" target="_self" title="zum Warenkorb">Warenkorb</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="left">
+            <br>
+            <br>
+            <ul id="leftmenue">
+                <li><a class="active" href="speisen.html" target="_self" title="zu den Pizzen">Pizza</a></li>
+                <li><a href="vorspeisen.html" target="_self" title="zu den Vorspeisen">Vorspeisen</a></li>
+                <li><a href="pasta.html" target="_self" title="zu den Pasten">Pasta</a></li>
+                <li><a href="getraenke.html" target="_self" title="zu den Getränken">Getränke</a></li>
+                <li><a href="salate.html" target="_self" title="zu den Salaten">Salate</a></li>
+                <li><a href="nachtisch.html" target="_self" title="zum Nachtisch">Nachtisch</a></li>
+                <li><a href="fleischgerichte.html" target="_self" title="zu den Fleischgerichten">Fleischgerichte</a></li>
+            </ul>
+        </div>
+        <div id="right">            
+            <br>
+            <h1>Pizzen</h1>
+            <table class="products">
+                <thead>
+                <tr>
+                    <th>Bestellnummer</th>
+                    <th>Menge</th>
+                    <th>Artikel</th>
+                    <th>Beschreibung</th>
+                    <th>Pizzagrößen</th>
+                    <th>Preis in EUR</th>
+                    <th>Bild</th>
+                    <th>Korb</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="row1" id="item1">
+                    <td> 1</td>
+                    <td>
+                        <select name="Anzahl">
+                          <option value="Anzahl1">1</option>
+                          <option value="Anzahl2">2</option>
+                          <option value="Anzahl3">3</option>
+                          <option value="Anzahl4">4</option>
+                          <option value="Anzahl5">5</option>
+                          <option value="Anzahl6">6</option>
+                          <option value="Anzahl7">7</option>
+                          <option value="Anzahl8">8</option>
+                          <option value="Anzahl9">9</option>
+                          <option value="Anzahl10">10</option>
+                      </select>
+                    </td>
+                    <td>Margherita </td>
+                    <td> mit Käse</td>
+                    <td>
+                        <input value="klein" checked name="pizzagroesse" type="Radio">klein
+                        <input value="mittel" name="pizzagroesse" type="Radio">mittel 
+                        <input value="groß" name="pizzagroesse" type="Radio">groß 
+                    </td>
+                    <td>6,99</td>
+                    <td> 
+                        <img src="images/pizza_margherita.jpg" alt="Bild Diplay" width="100"/>
+                    </td>
+                    <td>                   
+                    <a class="button" href="warenkorb.html" target="_self" title="zu Warenkorb">Korb</a>
+                    </td>                    
+                </tr>
+
+                <tr class="row2" id="item2">
+                    <td> 2</td>
+                    <td>
+                        <select name="Anzahl">
+                          <option value="Anzahl1">1</option>
+                          <option value="Anzahl2">2</option>
+                          <option value="Anzahl3">3</option>
+                          <option value="Anzahl4">4</option>
+                          <option value="Anzahl5">5</option>
+                          <option value="Anzahl6">6</option>
+                          <option value="Anzahl7">7</option>
+                          <option value="Anzahl8">8</option>
+                          <option value="Anzahl9">9</option>
+                          <option value="Anzahl10">10</option>
+                      </select>
+                    </td>
+                    <td>Salami </td>
+                    <td> mit Käse und Salami</td>
+                    <td>
+                        <input value="klein" name="pizzagroesse" type="Radio">klein
+                        <input value="mittel" name="pizzagroesse" type="Radio">mittel 
+                        <input value="groß" name="pizzagroesse" type="Radio">groß 
+                    </td>
+                    <td>7,49</td>
+                    <td>
+                        <a href="salami.html">
+                            <img src="images/pizza_salami.jpg" alt="Bild Diplay" width="100" />
+                        </a>
+                    </td>
+                    <td>
+                        <a class="button" href="warenkorb.html" target="_self" title="zu Warenkorb">Korb</a>
+                    </td>                 
+                </tr>              
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <select name="Anzahl">
+                          <option value="Anzahl1">1</option>
+                          <option value="Anzahl2">2</option>
+                          <option value="Anzahl3">3</option>
+                          <option value="Anzahl4">4</option>
+                          <option value="Anzahl5">5</option>
+                          <option value="Anzahl6">6</option>
+                          <option value="Anzahl7">7</option>
+                          <option value="Anzahl8">8</option>
+                          <option value="Anzahl9">9</option>
+                          <option value="Anzahl10">10</option>
+                      </select>
+                    </td>
+                    <td>Al Funghi </td>
+                    <td> mit Käse und Champignons</td>
+                    <td>
+                        <input value="klein" name="pizzagroesse" type="Radio">klein
+                        <input value="mittel" name="pizzagroesse" type="Radio">mittel 
+                        <input value="groß" name="pizzagroesse" type="Radio">groß 
+                    </td>
+                    <td>7,99</td>
+                    <td><img src="images/pizza_al_funghi.jpg" alt="Bild Diplay" width="100" /></td>
+                    <td>
+                        <a class="button" href="warenkorb.html" target="_self" title="zu Warenkorb">Korb</a>
+                    </td>                   
+                </tr>
+                <tr class="row2">
+                    <td> 4</td>
+                    <td>
+                        <select name="Anzahl">
+                          <option value="Anzahl1">1</option>
+                          <option value="Anzahl2">2</option>
+                          <option value="Anzahl3">3</option>
+                          <option value="Anzahl4">4</option>
+                          <option value="Anzahl5">5</option>
+                          <option value="Anzahl6">6</option>
+                          <option value="Anzahl7">7</option>
+                          <option value="Anzahl8">8</option>
+                          <option value="Anzahl9">9</option>
+                          <option value="Anzahl10">10</option>
+                      </select>
+                    </td>
+                    <td>Parma </td>
+                    <td> mit Käse, Rucola, Parmaschinken und Grana Padano</td>
+                    <td>
+                        <input value="klein" name="pizzagroesse" type="Radio">klein
+                        <input value="mittel" name="pizzagroesse" type="Radio">mittel 
+                        <input value="groß" name="pizzagroesse" type="Radio">groß 
+                    </td>
+                    <td>8,99</td>
+                    <td><img src="images/pizza_ parma.jpg" alt="Bild Diplay" width="100" /></td>
+                    <td>
+                        <a class="button" href="warenkorb.html" target="_self" title="zu Warenkorb">Korb</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                    <td>
+                        <select name="Anzahl">
+                          <option value="Anzahl1">1</option>
+                          <option value="Anzahl2">2</option>
+                          <option value="Anzahl3">3</option>
+                          <option value="Anzahl4">4</option>
+                          <option value="Anzahl5">5</option>
+                          <option value="Anzahl6">6</option>
+                          <option value="Anzahl7">7</option>
+                          <option value="Anzahl8">8</option>
+                          <option value="Anzahl9">9</option>
+                          <option value="Anzahl10">10</option>
+                      </select>
+                    </td>
+                    <td>Tonno </td>
+                    <td> mit Käse, Zwiebeln und Thunfisch</td>
+                    <td>
+                        <input value="klein" name="pizzagroesse" type="Radio">klein
+                        <input value="mittel" name="pizzagroesse" type="Radio">mittel 
+                        <input value="groß" name="pizzagroesse" type="Radio">groß 
+                    </td>
+                    <td>8,49</td>
+                    <td><img src="images/pizza_tonno.jpg" alt="Bild Diplay" width="100" /></td>
+                    <td>
+                        <a class="button" href="warenkorb.html" target="_self" title="zu Warenkorb">Korb</a>
+                    </td>                   
+                </tr>
+                <tr class="row2">
+                    <td> 6</td>
+                    <td>
+                        <select name="Anzahl">
+                          <option value="Anzahl1">1</option>
+                          <option value="Anzahl2">2</option>
+                          <option value="Anzahl3">3</option>
+                          <option value="Anzahl4">4</option>
+                          <option value="Anzahl5">5</option>
+                          <option value="Anzahl6">6</option>
+                          <option value="Anzahl7">7</option>
+                          <option value="Anzahl8">8</option>
+                          <option value="Anzahl9">9</option>
+                          <option value="Anzahl10">10</option>
+                      </select>
+                    </td>
+                    <td>Napoletana </td>
+                    <td> mit Käse, Mozarella und Basilikum (frisch)</td>
+                    <td>
+                        <input value="klein" name="pizzagroesse" type="Radio">klein
+                        <input value="mittel" name="pizzagroesse" type="Radio">mittel 
+                        <input value="groß" name="pizzagroesse" type="Radio">groß 
+                    </td>
+                    <td>7,99</td>
+                    <td><img src="images/pizza_napoli.jpg" alt="Bild Diplay" width="100" /></td>
+                    <td>
+                        <a class="button" href="warenkorb.html" target="_self" title="zu Warenkorb">Korb</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 7</td>
+                    <td>
+                        <select name="Anzahl">
+                          <option value="Anzahl1">1</option>
+                          <option value="Anzahl2">2</option>
+                          <option value="Anzahl3">3</option>
+                          <option value="Anzahl4">4</option>
+                          <option value="Anzahl5">5</option>
+                          <option value="Anzahl6">6</option>
+                          <option value="Anzahl7">7</option>
+                          <option value="Anzahl8">8</option>
+                          <option value="Anzahl9">9</option>
+                          <option value="Anzahl10">10</option>
+                      </select>
+                    </td>
+                    <td>Vegetarisch </td>
+                    <td> mit Käse, Zwiebeln, Gemüse, Artischocken und Basilikum (frisch)</td>
+                    <td>
+                        <input value="klein" name="pizzagroesse" type="Radio">klein
+                        <input value="mittel" name="pizzagroesse" type="Radio">mittel 
+                        <input value="groß" name="pizzagroesse" type="Radio">groß 
+                    </td>
+                    <td>7,99</td>
+                    <td><img src="images/pizza_vegetarisch.jpg" alt="Bild Diplay" width="100" /></td>
+                    <td>
+                        <a class="button" href="warenkorb.html" target="_self" title="zu Warenkorb">Korb</a>
+                    </td>                   
+                </tr>
+                </tbody>
+            </table>           
+        </div>
+        <a class="btn btn-rot" href="index.html" target="_self" title="zurück">Zurück zur Startseite</a>
+
+        <div id="footer">
+            <ul id="impressum">
+                <li><a href="datenschutz.html" target="_self" title="zum Datenschutz">Datenschutz</a></li>
+                <li><a href="impressum.html" target="_self" title="zum Impressum">Impressum</a></li>
+                <li><a href="kontakt.html" target="_self" title="zum Kontakt">Kontakt</a></li>
+            </ul>
+            <div id="copyright">Copyright &copy; 2022 Restaurant Italia</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="css/styleIndex.css" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">    
+    <div id="header">
+        <img src="images/kontakt_banner1200x300.jpg" alt="Bild Kontakt" width="1200" height="300"/>
+    </div>
+    <div id="content">
+             <div id="topmenue">
+                <ul id="menue">
+                    <li><a href="index.html" target="_self" title="zur Startseite">Home</a></li>
+                    <li><a href="speisen.html" target="_self" title="zu den Produkten">zu den Speisen</a></li>
+                    <li><a class="active" href="kontakt.html" target="_self" title="zum Kontakt">Kontakt</a></li>
+                    <li><a href="warenkorb.html" target="_self" title="zum Warenkorb">Warenkorb</a></li>
+                </ul>
+            </div>
+            <br>
+            <h1>Kontakt</h1>
+            <div id="contactform">
+                <form action="auswertung2.php" method="post" class="adminform">
+                <div class="form-row">                      
+                        <div class="form-input">
+                            <select name="anrede" required>
+                                <option value="">Anrede</option>
+                                <option value="Frau">Frau</option>
+                                <option value="Herr">Herr</option>
+                            </select>
+                        </div>
+                </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <input type="text" name="vorname" placeholder="Vorname" required/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <input type="text" name="nachname" placeholder="Nachname"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <input type="email" name="email" placeholder="E-Mail"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <input type="text" name="betreff"placeholder="Betreff"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <textarea name="nachricht" cols="30" rows="10" placeholder="Nachricht"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            Kundenart
+                        </div>
+                        <div class="form-input">
+                            <input type="radio" name="kundenart" value="privat" checked="checked"/>privat
+                            <input type="radio" name="kundenart" value="gewerblich"/>gewerblich
+                        </div>
+                    </div>
+                    <input type="submit" name="abbrechen" value="Abbrechen" class="button"/>
+                    <input type="submit" name="absenden" value="Absenden" class="button"/>
+                </form>
+            </div>
+
+            <a class="btn btn-rot" href="index.html" target="_self" title="zurück">Zurück zur Startseite</a>
+
+      
+        <div id="footer">
+            <ul id="impressum">
+                <li><a href="datenschutz.html" target="_self" title="zum Datenschutz">Datenschutz</a></li>
+                <li><a href="impressum.html" target="_self" title="zum Impressum">Impressum</a></li>
+                <li><a class="activebottom" href="kontakt.html" target="_self" title="zum Kontakt">Kontakt</a></li>
+            </ul>
+            <div id="copyright">Copyright &copy; 2022 Restaurant Italia</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
